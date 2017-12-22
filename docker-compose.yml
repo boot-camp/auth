@@ -12,7 +12,7 @@ services:
     ports:
     - "27017:27017"
     volumes:
-    - /home/docker/data:/data
+    - /home/docker/data/db:/data/db
     deploy:
       placement:
         constraints: [node.role == manager]
