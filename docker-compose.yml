@@ -13,3 +13,6 @@ services:
     - "27017:27017"
     volumes:
     - /home/docker/data:/data
+    deploy:
+      placement:
+        constraints: [node.role == manager]
